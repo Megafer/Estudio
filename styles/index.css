@@ -1,0 +1,396 @@
+/* Estilos generales */
+
+html {
+    scroll-behavior: smooth;
+    /* overflow: auto; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+    text-shadow: 2px 2px #cccccc;
+    animation: titleAnim 2s ease-in-out infinite alternate;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: justify;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+
+@keyframes titleAnim {
+    from {
+        text-shadow: 2px 2px #cccccc;
+    }
+    to {
+        text-shadow: -2px -2px #cccccc;
+    }
+}
+
+@keyframes serviceAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos específicos para secciones */
+
+.intro {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
+}
+
+.intro p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* NOSOTROS */
+.nosotros {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+/* SERVICIOS */
+
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.services .card {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.services .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.services .card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666666;
+    text-align: justify;
+}
+
+/*aca pongo summary y details*/
+details {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  details[open] {
+    background-color: #ffffff;
+  }
+  
+
+/* ARTICULOS */
+.articulos {
+    background-color: #f9f9f9;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .articulos h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .articulos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .articulo {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .articulo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .articulo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+
+/* Footer */
+
+.footer {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer p {
+    color: white;
+    font-size: 15px;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Estilos de la barra de navegación */
+
+.navbar {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar li a:hover {
+    background-color: #555555;
+}
+
+/* Estilos para el enlace activo */
+.navbar li.active a {
+    background-color: #555555;
+}
+
+/* Aca ponermos Formulario */
+.contact {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 60px 40px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar  {
+      padding: 5px;  
+    }
+
+    .navbar li {
+       margin: auto;
+    }
+
+    .navbar li a{
+        padding: 5px 1px;
+    }
+
+   
+    .container {
+        padding: 25px 18px 12px 18px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        padding: 40px 20px;
+    }
+
+    .nosotros {
+        padding: 20px 30px;
+    }
+
+    .nosotros h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services {
+        padding: 10px 10px;
+    }
+
+    .services h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services .card {
+        margin: 10px;
+        padding: 30px 20px;
+    }
+
+    .services .card h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .services .card p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .articulos-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact {
+        padding: 10px 40px 15px 20px ;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .form-group input[type="submit"] {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

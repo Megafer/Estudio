@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/index.css">
+	<title>Estudio Jurídico</title>
+
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a class="active" href="#intro">Inicio</a></li>
+			<li><a href="#nosotros">Nosotros</a></li>
+			<li><a href="#services">Servicios</a></li>
+			<li><a href="#articulos">Artículos</a></li>
+			<li><a href="#contact">Contacto</a></li>
+		</ul>
+	</div>
+
+	<div id="intro" class="container">
+		<header>
+			<h1>Estudio Jurídico</h1>
+		</header>
+		<section  class="intro">
+			<p>Bienvenidos a Estudio Jurídico, una empresa del grupo ZZZZ. Cualquier duda o cunsulta nos puede contactar.</p>
+		</section>
+		<br>
+		<section id="nosotros" class="nosotros">
+			<h2 >Nosotros</h2>
+			<p>Somos un estudio jurídico especializado en brindar asesoramiento y representación legal en diversas áreas del derecho. Nuestro equipo de profesionales altamente capacitados está a su disposición para ayudarlo en cualquier situación.</p>
+			<br>
+			<p>Aca vamos a detallar un poco nuestra historia y misión en un link que va a estar ubicado abajo</p>
+			<details>
+				<summary>Más información</summary>
+				<p>Aquí puedes agregar más información sobre el estudio jurídico, como su historia, misión, valores, logros, etc.</p>
+			  </details>
+		</section>
+
+		<br>
+<!-- SECCION SERVICIOS -->
+		<section id="services" class="services">
+			<h2>Nuestros Servicios</h2>
+			<div class="card">
+				<h3>Derecho Civil</h3>
+				<p>Ofrecemos asesoramiento y representación en casos de responsabilidad civil, contratos, sucesiones, derecho de familia, entre otros.</p>
+			</div>
+			<div class="card">
+				<h3>Derecho Penal</h3>
+				<p>Brindamos asistencia en casos penales, desde la fase de investigación hasta la defensa en juicio.</p>
+			</div>
+			<div class="card">
+				<h3>Derecho Laboral</h3>
+				<p>Asesoramos en temas de derecho laboral, como despidos, accidentes de trabajo, indemnizaciones, entre otros.</p>
+			</div>
+		</section>
+
+		<br>
+<!-- SECCION ARTICULOS -->
+		<section id="articulos" class="nosotros">
+			<h2 >Artículos</h2>
+			<p>Es una seccion donde podemos agregar artículos de actualidad de la empresa o de información.</p>
+			<br>
+			<p>Aca vamos a detallar lo que sea necesario, datos... etc etc</p>
+			<br>
+			<div class="articulos-container">
+				<div class="articulo">
+				  <h3>Título del artículo 1</h3>
+				  <p>Descripción del artículo 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="articulo">
+				  <h3>Título del artículo 2</h3>
+				  <p>Descripción del artículo 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+
+<section id="contact" class="contact">
+			<h2>Contacto</h2>
+				<p>Puede comunicarse con nosotros a través del siguiente formulario o utilizando los datos de contacto a continuación:</p>
+				<br>
+				<form class="form-group fadeIn" action="procesar.php" method="POST">
+					<label for="name">Nombre:</label>
+					<input type="text" id="name" name="name" required>
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
+					<label for="message">Mensaje:</label>
+					<textarea id="message" name="message" required></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+		</section>
+	</div>
+	<footer class="footer">
+		<p>&copy; 2023 Estudio Jurídico |
